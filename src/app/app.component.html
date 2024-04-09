@@ -5,7 +5,7 @@
       {{tarea}}
       <button type="button" (click)="eliminarTarea(i)">Eliminar</button>
     </li>
-    <input type="text" placeholder="Nueva tarea" [(ngModel)]="nuevaTarea"/>
+    <input type="text" placeholder="Nueva tarea" [(ngModel)]="nuevaTarea" (keydown.enter)="agregarTarea()"/>
     <button type="button" (click)="agregarTarea()">Agregar tarea</button>
   </ul>
 </div>
